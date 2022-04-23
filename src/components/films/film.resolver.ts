@@ -1,9 +1,10 @@
-import { Args, Query, Resolver } from '@nestjs/graphql';
+import { ConfigService } from '@nestjs/config';
+import { Args, Int, Query, Resolver } from '@nestjs/graphql';
 import { FilmModel } from './interfaces/Film.model';
 
 @Resolver((of) => FilmModel)
 export class FilmsResolver {
-  constructor() {}
+  constructor(private configService: ConfigService) {}
 
   @Query(() => [FilmModel], { name: 'films', nullable: true })
   async getFilms() {
