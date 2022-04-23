@@ -5,7 +5,7 @@ import { FilmModel } from './interfaces/Film.model';
 export class FilmsResolver {
   constructor() {}
 
-  @Query(() => [FilmModel], { name: 'Films', nullable: true })
+  @Query(() => [FilmModel], { name: 'films', nullable: true })
   async getFilms() {
     return [
       {

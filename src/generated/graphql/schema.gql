@@ -8,5 +8,5 @@ type FilmModel {
 }
 
 type Query {
-  Films: [FilmModel!]
+  films: [FilmModel!]
 }
