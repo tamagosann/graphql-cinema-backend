@@ -9,4 +9,5 @@ type FilmModel {
 
 type Query {
   films: [FilmModel!]
+  prismaFilms: [FilmModel!]
 }
