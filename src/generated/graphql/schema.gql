@@ -1,0 +1,12 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type FilmModel {
+  id: String!
+  title: String!
+}
+
+type Query {
+  Films: [FilmModel!]
+}
