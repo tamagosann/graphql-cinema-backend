@@ -3,11 +3,18 @@
 # ------------------------------------------------------
 
 type FilmModel {
-  id: String!
+  backdrop_path: String!
+  genre_ids: [Float]!
+  id: Float!
+  original_title: String!
+  overview: String!
+  poster_path: String!
+  release_date: String!
   title: String!
 }
 
 type Query {
   films: [FilmModel!]
+  filmsIndexPage: [FilmModel!]
   prismaFilms: [FilmModel!]
 }
